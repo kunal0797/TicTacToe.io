@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/logic.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>TIC-TAC-TOE</h1>
+        <br>
+        <div class=sub-heading>
+            <br><br><br>
+            <h3 class="P1" style="float: left;">Player 1 : X</h3><h3 class="P2" style="float: right;">Player 2 : O</h3>
+        </div>
+            
+    </div>
+    
+    <div class="board">
+        <table>
+            <tr>
+                <td class="hori">
+                    <button  id="00" onclick="player(this.id)"></button>
+                </td>
+                <td>
+                    <button  id="01" onclick="player(this.id)"></button>
+                </td>
+                <td>
+                    <button  id="02" onclick="player(this.id)"></button>
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <button  id="10" onclick="player(this.id)"></button>
+                </td>
+                <td>
+                    <button  id="11" onclick="player(this.id)"></button>
+                </td>
+                <td>
+                    <button  id="12" onclick="player(this.id)"></button>
+                </td> 
+            </tr> 
+            <br>
+            <tr>
+                <td>
+                    <button  id="20" onclick="player(this.id)"></button>
+                </td>
+                <td>
+                    <button  id="21" onclick="player(this.id)"></button>
+                </td>
+                <td>
+                    <button  id="22" onclick="player(this.id)"></button>
+                </td>
+                
+            </tr>
+            
+            <br>
+        </table>
+        <br>
+        <div class="winning-status">
+            <h2 class="game-status"></h2>
+        </div>
+        
+    </div>
+    <br>
+
+    <div class="container">
+        <button type="button" class="btn btn-danger" id="restart" onclick="Restart()">Restart</button>
+    </div>
+        
+    </div>
+    
+</body>
+</html>
